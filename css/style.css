@@ -35,6 +35,10 @@ section {
     margin: auto; 
 }
 
+header h1{
+    padding-top: 0px;
+    margin-top: 0px;
+}
 .grid-tabel {
     background-color: #ffffff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -59,6 +63,7 @@ section {
 /* Setiap gambar */
 .slider img {
     width: 100%;
+    max-height: 250px;
     flex-shrink: 0;
     border-radius: 10px;
     user-select: none;
@@ -69,12 +74,14 @@ section {
   margin: auto;
 }
 
-.menu-item { 
- border: 1px solid #ddd; 
- padding: 10px; 
- margin: 10px 0; 
- display: flex; 
- align-items: center; 
+.menu-item {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .menu-item img { 
