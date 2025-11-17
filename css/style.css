@@ -1,0 +1,90 @@
+body { 
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f8f6f6; 
+ }
+
+header { 
+ background-color: #127fd8; 
+ color: white;
+ text-align: center; 
+ padding: 20px; 
+}
+
+nav { 
+    background-color: #127fd8;
+    min-width: auto;
+    color: white; 
+    padding: 10px; 
+}
+
+nav p { 
+  text-align: left; 
+  font-family: "Momo Signature", cursive;
+  color: white; 
+  margin: 0 15px; 
+  text-decoration: 
+  none; 
+}
+
+
+section { 
+    padding: 20px; 
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.grid-tabel {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+    margin: -30px 15px 0 15px;
+    border-radius: 8px;
+}
+
+/* Container slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Track untuk gambar-gambar */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Setiap gambar */
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    user-select: none;
+}
+
+
+.container {
+  margin: auto;
+}
+
+.menu-item { 
+ border: 1px solid #ddd; 
+ padding: 10px; 
+ margin: 10px 0; 
+ display: flex; 
+ align-items: center; 
+}
+
+.menu-item img { 
+ width: 100px; height: 
+ 100px; margin-right: 20px; 
+}
+
+footer { 
+ background-color: #333; 
+ color: white; 
+ text-align: center;
+ padding: 10px; 
+}
