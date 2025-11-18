@@ -67,3 +67,31 @@
     slider.addEventListener('touchstart', (e) => startDrag(e.touches[0].clientX));
     slider.addEventListener('touchmove', (e) => moveDrag(e.touches[0].clientX));
     slider.addEventListener('touchend', endDrag);
+
+    const phrases = [
+    "Rasanya auto balik lagi! 😍✨",
+    "Sekali coba langsung jatuh cinta! ❤️🤤",
+    "Dijamin susah berhenti! 😆🍽️",
+    "Cemilan favorit semua orang! ⭐🍡",
+    "Rasa viral yang wajib kamu coba! 📈🔥",
+    "Bikin lidah happy seharian! 😋🎉",
+    "Kenikmatan yang tidak bisa ditolak! 🤩🍴",
+    "Cemilan paling dicari tahun ini! 🔎🍢",
+    "Bikin mulut kamu minta lagi! 🤤👌",
+    "Jajanan yang bikin ketagihan! 🔥😋"
+  ];
+
+  const textEl = document.querySelector('.phrase');
+
+  function updateText() {
+    textEl.classList.remove("show");
+
+    setTimeout(() => {
+      textEl.textContent = phrases[index];
+      textEl.classList.add("show");
+      index = (index + 1) % phrases.length;
+    }, 400); // waktu fade-out
+  }
+
+  updateText();
+  setInterval(updateText, 4000); // 2.5 detik per teks
