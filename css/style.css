@@ -29,6 +29,27 @@ nav p {
 }
 
 
+.text-wrap {
+  position: relative;
+  height: 40px;              /* Sesuaikan tinggi area */
+  display: flex;
+  align-items: center;
+  margin: 35px 0px 0px 20px;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.phrase {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  position: absolute;
+}
+.phrase.show {
+  opacity: 1;
+}
+
+
 section { 
     padding: 20px; 
     max-width: 800px; 
@@ -42,9 +63,9 @@ header h1{
 .grid-tabel {
     background-color: #ffffff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     padding: 10px; 
     margin: -30px 15px 0 15px;
-    border-radius: 8px;
 }
 
 /* Container slider */
@@ -70,6 +91,27 @@ header h1{
 }
 
 
+.fixed-slider {
+  bottom: 10px; /* bisa atur top:0 agar di atas */
+  left: 0;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  backdrop-filter: blur(5px); /* biar cakep */
+}
+
+.scroll-area img {
+  width: 90px;
+  margin-right: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.jajananteks {
+    margin: 50px 0px 0px 20px;
+}
+
 .container {
   margin: auto;
 }
@@ -79,7 +121,7 @@ header h1{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 10px 0px 10px;
     display: flex;
     align-items: center;
 }
