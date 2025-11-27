@@ -2,6 +2,7 @@
   const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slider img');
     let index = 0;
+    let lastScroll = 0;
     let slideWidth = slides[0].clientWidth;
 
     function updateSlide() {
@@ -95,3 +96,20 @@
 
   updateText();
   setInterval(updateText, 4000); // 2.5 detik per teks
+
+
+  const footer = document.getElementById("footer");
+
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+      // Scroll ke bawah → sembunyikan footer
+      footer.classList.add("hide");
+    } else {
+      // Scroll ke atas → tampilkan footer
+      footer.classList.remove("hide");
+    }
+
+    lastScroll = currentScroll;
+    });
