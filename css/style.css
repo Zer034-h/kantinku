@@ -110,6 +110,7 @@ header h1{
   object-fit: cover;
 }
 
+
 .jajananteks {
     margin: 50px 0px 0px 20px;
 }
@@ -149,4 +150,14 @@ footer {
 /* Saat disembunyikan */
 footer.hide {
   transform: translateY(100%);
+}
+
+footer i{
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+a {
+  color: inherit;       /* mengikuti warna teks parent */
+  text-decoration: none; /* hilangkan garis bawah */
 }
