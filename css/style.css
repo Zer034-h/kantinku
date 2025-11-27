@@ -158,6 +158,6 @@ footer i{
 }
 
 a {
-  color: inherit;       /* mengikuti warna teks parent */
-  text-decoration: none; /* hilangkan garis bawah */
+  color: inherit;
+  text-decoration: none;
 }
