@@ -92,20 +92,22 @@ header h1{
 
 
 .fixed-slider {
-  bottom: 10px; /* bisa atur top:0 agar di atas */
-  left: 0;
+  position: relative;      /* atau absolute kalau ingin nempel bawah */
   width: 100%;
+  height: 110px;           /* kasih tinggi FIX supaya tidak memanjang */
   overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
-  padding: 10px;
-  backdrop-filter: blur(5px); /* biar cakep */
+  padding: 10px 0;
 }
 
 .scroll-area img {
-  width: 90px;
+  height: 90px;           /* lebih bagus pakai height, bukan width */
+  width: auto;
   margin-right: 10px;
   border-radius: 8px;
   display: inline-block;
+  object-fit: cover;
 }
 
 .jajananteks {
